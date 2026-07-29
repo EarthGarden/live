@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth Care Garden's | Premium Plant Nursery — Kerala</title>
+<meta name="description" content="Bilingual plant catalogue from Earth Care Garden's. Order premium fruit trees, grafts and rare plants via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1f3a2b;
+  --forest-2:#2d5a3d;
+  --leaf:#6b8e5a;
+  --moss:#e8ede4;
+  --cream:#faf7f0;
+  --sand:#f2ede1;
+  --ink:#1a1f1c;
+  --muted:#5b6660;
+  --line:#e3e0d5;
+  --gold:#b8873a;
+  --wa:#25D366;
+  --wa-dark:#128C7E;
+  --shadow-sm:0 1px 2px rgba(31,58,43,.06);
+  --shadow:0 6px 24px rgba(31,58,43,.08);
+  --shadow-lg:0 20px 50px rgba(31,58,43,.18);
+  --radius:14px;
+  --t:.28s cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.2;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+
+/* Announcement bar */
+.announce{
+  background:var(--forest);color:var(--cream);
+  font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
+  text-align:center;padding:8px 16px;
+}
+.announce b{color:#e6c98a;font-weight:600}
+
+/* Nav */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(250,247,240,.92);
+  backdrop-filter:saturate(1.4) blur(10px);
+  -webkit-backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1400px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 24px;gap:16px;
+}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{
+  width:50px;height:50px;border-radius:50%;
+  background:#fff;
+  display:grid;place-items:center;
+  box-shadow:var(--shadow-sm);
+  overflow: hidden;
+}
+.logo-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.logo-text{display:flex;flex-direction:column;line-height:1.05}
+.logo-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--forest);letter-spacing:.02em}
+.logo-sub{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+
+.nav-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{
+  background:transparent;border:1px solid var(--line);
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;cursor:pointer;
+  transition:var(--t);color:var(--forest);
+}
+.icon-btn:hover{background:var(--moss);border-color:var(--forest-2)}
+.cart-btn{
+  position:relative;background:var(--forest);color:var(--cream);
+  border:none;padding:12px 22px;border-radius:999px;
+  font-weight:600;font-size:.92rem;cursor:pointer;
+  display:flex;align-items:center;gap:10px;
+  transition:var(--t);letter-spacing:.02em;
+}
+.cart-btn:hover{background:var(--forest-2);transform:translateY(-1px);box-shadow:var(--shadow)}
+.cart-count{
+  background:var(--gold);color:#fff;
+  min-width:22px;height:22px;padding:0 6px;
+  border-radius:11px;font-size:.75rem;font-weight:700;
+  display:inline-grid;place-items:center;
+}
+
+/* Hero */
+.hero{
+  position:relative;overflow:hidden;
+  min-height:78vh;
+  display:flex;align-items:center;
+  background:
+    linear-gradient(135deg,rgba(20,34,25,.72),rgba(31,58,43,.55) 55%,rgba(31,58,43,.35)),
+    url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1920&q=80') center/cover;
+  color:var(--cream);
+}
+.hero-inner{
+  max-width:1400px;margin:0 auto;padding:80px 24px;
+  width:100%;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;
+  padding:8px 16px;border:1px solid rgba(255,255,255,.35);
+  border-radius:999px;margin-bottom:24px;color:#e6c98a;
+  backdrop-filter:blur(4px);
+}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#e6c98a}
+.hero h1{
+  font-size:clamp(2.4rem,6vw,4.8rem);
+  max-width:900px;margin-bottom:20px;font-weight:600;
+}
+.hero h1 em{font-style:italic;color:#e6c98a;font-weight:500}
+.hero p{
+  max-width:620px;font-size:1.1rem;opacity:.92;margin-bottom:36px;
+}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 28px;border-radius:999px;font-weight:600;
+  font-size:.95rem;cursor:pointer;border:none;transition:var(--t);
+  letter-spacing:.02em;
+}
+.btn-primary{background:var(--cream);color:var(--forest)}
+.btn-primary:hover{background:#fff;transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-ghost{background:transparent;color:var(--cream);border:1.5px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+.hero-stats{
+  display:flex;gap:40px;margin-top:56px;flex-wrap:wrap;
+  padding-top:32px;border-top:1px solid rgba(255,255,255,.18);
+}
+.stat-num{font-family:'Fraunces',serif;font-size:2rem;font-weight:600;color:#e6c98a}
+.stat-lbl{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;opacity:.78;margin-top:2px}
+
+/* Section */
+.section{padding:80px 24px}
+.section-inner{max-width:1400px;margin:0 auto}
+.section-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:24px;margin-bottom:40px;
+}
+.section-label{
+  font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:12px;font-weight:600;
+}
+.section-title{
+  font-size:clamp(2rem,4vw,3rem);color:var(--forest);
+  max-width:640px;
+}
+.section-title span{font-family:'Fraunces',serif;font-style:italic;color:var(--leaf);font-weight:500}
+.section-sub{color:var(--muted);max-width:520px;font-size:1rem}
+
+/* Toolbar */
+.toolbar{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;margin-bottom:32px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+  box-shadow:var(--shadow-sm);
+}
+.search{
+  flex:1;min-width:240px;position:relative;
+  display:flex;align-items:center;
+}
+.search svg{position:absolute;left:16px;color:var(--muted)}
+.search input{
+  width:100%;padding:13px 16px 13px 46px;
+  border:1px solid var(--line);border-radius:10px;
+  font-size:.95rem;font-family:inherit;background:var(--cream);
+  color:var(--ink);transition:var(--t);
+}
+.search input:focus{outline:none;border-color:var(--forest-2);background:#fff;box-shadow:0 0 0 3px rgba(45,90,61,.1)}
+.sort{
+  padding:13px 16px;border:1px solid var(--line);border-radius:10px;
+  background:var(--cream);font-family:inherit;font-size:.9rem;cursor:pointer;color:var(--ink);
+}
+
+/* Filter chips */
+.chips{
+  display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;margin-bottom:32px;
+  scrollbar-width:thin;
+}
+.chip{
+  flex-shrink:0;padding:10px 20px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;cursor:pointer;
+  font-size:.85rem;font-weight:500;color:var(--muted);
+  transition:var(--t);white-space:nowrap;
+}
+.chip:hover{border-color:var(--forest-2);color:var(--forest)}
+.chip.active{background:var(--forest);color:var(--cream);border-color:var(--forest)}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+  gap:28px;
+}
+.card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  cursor:pointer;transition:var(--t);
+  border:1px solid var(--line);
+  display:flex;flex-direction:column;
+  position:relative;
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.card-img-wrap{
+  position:relative;aspect-ratio:1/1;overflow:hidden;
+  background:var(--moss);
+}
+.card-img-wrap img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s cubic-bezier(.4,0,.2,1);
+}
+.card:hover .card-img-wrap img{transform:scale(1.06)}
+.card-badge{
+  position:absolute;top:14px;left:14px;
+  background:rgba(31,58,43,.9);color:var(--cream);
+  padding:5px 12px;border-radius:999px;
+  font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:600;backdrop-filter:blur(6px);
+}
+.quick-add{
+  position:absolute;bottom:14px;right:14px;
+  width:44px;height:44px;border-radius:50%;
+  background:#fff;color:var(--forest);border:none;cursor:pointer;
+  display:grid;place-items:center;box-shadow:var(--shadow);
+  transition:var(--t);opacity:0;transform:translateY(10px);
+}
+.card:hover .quick-add{opacity:1;transform:translateY(0)}
+.quick-add:hover{background:var(--forest);color:var(--cream);transform:scale(1.08)}
+.card-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card-name{
+  font-family:'Fraunces',serif;font-size:1.08rem;color:var(--forest);
+  font-weight:600;margin-bottom:4px;line-height:1.3;
+}
+.card-mal{color:var(--muted);font-size:.88rem;margin-bottom:14px;min-height:1.3em}
+.card-foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px;border-top:1px dashed var(--line)}
+.price{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;color:var(--ink)}
+.price small{font-size:.7rem;color:var(--muted);font-weight:500;letter-spacing:.05em;text-transform:uppercase;margin-left:4px}
+.view-link{font-size:.78rem;color:var(--gold);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+
+.empty-state{
+  grid-column:1/-1;text-align:center;padding:80px 20px;color:var(--muted);
+}
+.empty-state h3{color:var(--forest);margin-bottom:8px;font-size:1.4rem}
+
+/* Features strip */
+.features{
+  background:var(--moss);padding:60px 24px;
+}
+.features-grid{
+  max-width:1400px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;
+}
+.feature{display:flex;gap:16px;align-items:flex-start}
+.feature-icon{
+  width:52px;height:52px;border-radius:14px;flex-shrink:0;
+  background:#fff;color:var(--forest);display:grid;place-items:center;
+  box-shadow:var(--shadow-sm);
+}
+.feature h4{font-size:1.05rem;color:var(--forest);margin-bottom:4px}
+.feature p{font-size:.88rem;color:var(--muted);line-height:1.5}
+
+/* Footer */
+footer{
+  background:var(--forest);color:var(--cream);padding:70px 24px 30px;
+}
+.foot-inner{
+  max-width:1400px;margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;
+  padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.foot-brand{max-width:400px}
+.foot-brand h3{font-size:1.6rem;margin-bottom:12px;color:#fff}
+.foot-brand p{opacity:.75;font-size:.92rem;line-height:1.7}
+.foot-col h5{
+  font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;
+  margin-bottom:18px;color:#e6c98a;font-family:'Inter',sans-serif;font-weight:600;
+}
+.foot-col a,.foot-col p{
+  display:block;font-size:.92rem;opacity:.8;margin-bottom:10px;
+  transition:var(--t);
+}
+.foot-col a:hover{opacity:1;color:#e6c98a}
+.copyright{
+  max-width:1400px;margin:30px auto 0;text-align:center;
+  font-size:.8rem;opacity:.55;letter-spacing:.05em;
+}
+@media (max-width:768px){.foot-inner{grid-template-columns:1fr;gap:40px}}
+
+/* Floating WhatsApp */
+.wa-float{
+  position:fixed;bottom:24px;right:24px;z-index:90;
+  width:60px;height:60px;border-radius:50%;
+  background:var(--wa);color:#fff;
+  display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(37,211,102,.4);
+  cursor:pointer;border:none;transition:var(--t);
+  animation:pulse 2.5s infinite;
+}
+.wa-float:hover{transform:scale(1.08);background:var(--wa-dark);animation:none}
+@keyframes pulse{
+  0%,100%{box-shadow:0 10px 30px rgba(37,211,102,.4),0 0 0 0 rgba(37,211,102,.5)}
+  50%{box-shadow:0 10px 30px rgba(37,211,102,.4),0 0 0 14px rgba(37,211,102,0)}
+}
+
+/* Overlay */
+.overlay{
+  position:fixed;inset:0;background:rgba(15,26,20,.55);
+  backdrop-filter:blur(4px);z-index:150;
+  opacity:0;pointer-events:none;transition:opacity var(--t);
+}
+.overlay.active{opacity:1;pointer-events:auto}
+
+/* Cart sidebar */
+.cart-side{
+  position:fixed;top:0;right:0;height:100dvh;
+  width:100%;max-width:440px;background:var(--cream);
+  z-index:200;display:flex;flex-direction:column;
+  transform:translateX(100%);transition:transform var(--t);
+  box-shadow:-20px 0 50px rgba(0,0,0,.2);
+}
+.cart-side.active{transform:translateX(0)}
+.cart-head{
+  padding:24px 26px;background:var(--forest);color:var(--cream);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.cart-head h2{font-size:1.4rem}
+.cart-head small{display:block;opacity:.7;font-size:.78rem;margin-top:2px;font-family:'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.close-x{
+  background:rgba(255,255,255,.12);border:none;color:var(--cream);
+  width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer;
+  display:grid;place-items:center;transition:var(--t);
+}
+.close-x:hover{background:rgba(255,255,255,.22)}
+
+.cart-list{flex:1;overflow-y:auto;padding:22px 26px;list-style:none}
+.cart-item{
+  display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);
+}
+.cart-item img{
+  width:70px;height:70px;border-radius:10px;object-fit:cover;
+  background:var(--moss);flex-shrink:0;
+}
+.ci-body{flex:1;min-width:0}
+.ci-name{font-family:'Fraunces',serif;font-size:.98rem;color:var(--forest);font-weight:600;margin-bottom:2px}
+.ci-mal{font-size:.78rem;color:var(--muted);margin-bottom:8px}
+.ci-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.qty{
+  display:inline-flex;align-items:center;
+  border:1px solid var(--line);border-radius:999px;background:#fff;
+}
+.qty button{
+  width:28px;height:28px;border:none;background:transparent;
+  cursor:pointer;color:var(--forest);font-size:1rem;font-weight:600;
+  display:grid;place-items:center;
+}
+.qty button:hover{color:var(--gold)}
+.qty span{min-width:24px;text-align:center;font-weight:600;font-size:.88rem}
+.ci-price{font-family:'Fraunces',serif;font-weight:700;color:var(--ink)}
+.remove-x{background:none;border:none;color:var(--muted);font-size:.75rem;cursor:pointer;text-decoration:underline;padding:0;letter-spacing:.05em}
+.remove-x:hover{color:#c73838}
+
+.empty-cart{text-align:center;padding:60px 20px;color:var(--muted)}
+.empty-cart .icon{font-size:3rem;margin-bottom:16px;opacity:.4}
+
+.cart-foot{padding:22px 26px;background:#fff;border-top:1px solid var(--line)}
+.total-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;font-size:.85rem;color:var(--muted)}
+.total-main{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
+.total-main span:first-child{font-family:'Fraunces',serif;font-size:1.2rem;color:var(--forest);font-weight:600}
+.total-main span:last-child{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:700;color:var(--ink)}
+.email-btn{
+  width:100%;padding:16px;background:var(--forest);color:#fff;border:none;
+  border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  transition:var(--t);letter-spacing:.03em;
+}
+.email-btn:hover{background:var(--forest-2);transform:translateY(-1px);box-shadow:0 10px 24px rgba(31,58,43,.35)}
+.email-note{text-align:center;font-size:.75rem;color:var(--muted);margin-top:10px;letter-spacing:.02em}
+
+/* Checkout details */
+.checkout-form{display:grid;gap:10px;margin:18px 0}
+.checkout-form h3{font-size:1rem;color:var(--forest);margin:2px 0 4px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.checkout-form input,.checkout-form textarea,.checkout-form select{width:100%;border:1px solid var(--line);border-radius:9px;background:var(--cream);color:var(--ink);font:inherit;font-size:.86rem;padding:11px 12px;transition:var(--t)}
+.checkout-form textarea{resize:vertical;min-height:70px}
+.checkout-form input:focus,.checkout-form textarea:focus,.checkout-form select:focus{outline:none;background:#fff;border-color:var(--forest-2);box-shadow:0 0 0 3px rgba(45,90,61,.1)}
+.form-hint{font-size:.74rem;color:var(--muted);line-height:1.4}
+@media (max-width:420px){.form-row{grid-template-columns:1fr}}
+
+/* Product modal */
+.pmodal{
+  position:fixed;inset:0;z-index:250;display:none;
+  padding:20px;overflow-y:auto;
+}
+.pmodal.active{display:flex;align-items:flex-start;justify-content:center}
+.pmodal-box{
+  background:var(--cream);border-radius:20px;width:100%;max-width:1050px;
+  overflow:hidden;box-shadow:var(--shadow-lg);
+  transform:scale(.96);opacity:0;transition:var(--t);
+  margin:auto;
+}
+.pmodal.active .pmodal-box{transform:scale(1);opacity:1}
+.pmodal-close{
+  position:absolute;top:28px;right:28px;z-index:10;
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.95);border:none;font-size:22px;
+  cursor:pointer;color:var(--forest);
+  display:grid;place-items:center;box-shadow:var(--shadow);
+}
+.pmodal-close:hover{background:#fff;transform:rotate(90deg);transition:var(--t)}
+
+.pm-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:0}
+.pm-gallery{background:var(--moss);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.pm-gallery img{
+  width:100%;border-radius:12px;background:#fff;
+  aspect-ratio:1/1;object-fit:cover;
+}
+.pm-main{grid-column:1/-1;aspect-ratio:16/11 !important}
+
+.pm-info{padding:44px 40px;display:flex;flex-direction:column}
+.pm-cat{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:600}
+.pm-title{font-size:2.1rem;color:var(--forest);margin-bottom:6px;line-height:1.15}
+.pm-mal{font-size:1.15rem;color:var(--muted);margin-bottom:22px;font-family:'Fraunces',serif;font-style:italic}
+.pm-price{
+  font-family:'Fraunces',serif;font-size:2rem;font-weight:700;color:var(--ink);
+  padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  margin-bottom:24px;
+}
+.pm-price small{font-size:.75rem;color:var(--muted);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-left:8px;font-family:'Inter',sans-serif}
+
+.pm-desc h4{
+  font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--forest-2);margin-bottom:8px;margin-top:16px;font-family:'Inter',sans-serif;font-weight:600;
+}
+.pm-desc h4:first-child{margin-top:0}
+.pm-desc p{color:var(--muted);font-size:.94rem;line-height:1.7}
+
+.pm-add{
+  margin-top:28px;padding:16px 24px;background:var(--forest);color:var(--cream);
+  border:none;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;
+  transition:var(--t);display:flex;align-items:center;justify-content:center;gap:10px;
+  letter-spacing:.03em;
+}
+.pm-add:hover{background:var(--forest-2);transform:translateY(-2px);box-shadow:var(--shadow)}
+
+/* Toast */
+.toast{
+  position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--forest);color:var(--cream);
+  padding:14px 24px;border-radius:999px;font-size:.9rem;font-weight:500;
+  box-shadow:var(--shadow-lg);z-index:300;
+  opacity:0;pointer-events:none;transition:var(--t);
+  display:flex;align-items:center;gap:10px;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Responsive */
+@media (max-width:900px){
+  .pm-grid{grid-template-columns:1fr}
+  .pm-info{padding:32px 26px}
+  .pm-title{font-size:1.7rem}
+  .hero{min-height:auto;padding:40px 0}
+  .hero-stats{gap:24px}
+  .stat-num{font-size:1.5rem}
+  .section{padding:60px 20px}
+  .foot-inner{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .nav-inner{padding:12px 16px}
+  .logo-mark{width:38px;height:38px;font-size:19px}
+  .logo-name{font-size:1rem}
+  .logo-sub{font-size:.62rem}
+  .cart-btn{padding:10px 16px;font-size:.85rem}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+  .card-body{padding:14px}
+  .card-name{font-size:.95rem}
+  .price{font-size:1.1rem}
+  .pmodal{padding:0}
+  .pmodal-box{border-radius:0;min-height:100dvh}
+  .pm-gallery{padding:20px}
+  .wa-float{width:54px;height:54px;bottom:16px;right:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">🌿 Fresh grafts weekly • <b>Order via WhatsApp or Email</b> — delivery across Kerala</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark"><img src="logo.jpeg" alt="Earth Care Garden's Logo"></div>
+      <div class="logo-text">
+        <div class="logo-name">Earth Care Garden's</div>
+        <div class="logo-sub">Premium Plant Nursery</div>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <button class="cart-btn" onclick="toggleCart()" aria-label="Open cart">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span>Cart</span>
+        <span class="cart-count" id="cart-count-badge">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Rooted in Kerala since 2018</span>
+    <h1>Rare fruit trees, <em>lovingly</em> raised for your garden.</h1>
+    <p>A bilingual catalogue of premium grafts, native saplings and exotic fruiting plants — hand-picked from our nursery and shipped straight to your doorstep.</p>
+    <div class="hero-ctas">
+      <a href="#shop" class="btn btn-primary">
+        Explore Collection
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="https://wa.me/916282936693" class="btn btn-ghost" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num" id="stat-varieties">100+</div><div class="stat-lbl">Varieties</div></div>
+      <div><div class="stat-num">12</div><div class="stat-lbl">Plant Categories</div></div>
+      <div><div class="stat-num">6+</div><div class="stat-lbl">Years Growing</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-lbl">Nursery Raised</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="features-grid">
+    <div class="feature">
+      <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10M10 20l-2-8m6 8l2-8M5 12h14l-1.5-6h-11z"/></svg></div>
+      <div><h4>Nursery Raised</h4><p>Every plant is grafted and grown in our own Kerala nursery.</p></div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+      <div><h4>Kerala-wide Delivery</h4><p>Safe, root-protected packing shipped across the state.</p></div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></div>
+      <div><h4>Order on WhatsApp</h4><p>Quick chat-based ordering — no forms, no fuss.</p></div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+      <div><h4>Guaranteed Healthy</h4><p>Only strong, disease-free plants leave our nursery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <div class="section-label">The Catalogue</div>
+        <h2 class="section-title">Our <span>living</span> collection</h2>
+      </div>
+      <p class="section-sub">Browse over a hundred carefully raised varieties. Tap any plant for full bilingual details in English and Malayalam.</p>
+    </div>
+
+    <div class="toolbar">
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input id="search-input" type="text" placeholder="Search plants (English or Malayalam)…" oninput="applyFilters()">
+      </label>
+      <select class="sort" id="sort-select" onchange="applyFilters()">
+        <option value="default">Sort: Featured</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+        <option value="az">Name: A – Z</option>
+      </select>
+    </div>
+
+    <div class="chips" id="chips"></div>
+
+    <div class="grid" id="product-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <h3>Earth Care Garden's</h3>
+      <p>A family-run plant nursery in Kerala, growing premium fruit trees, rare exotics and traditional native saplings for gardens across South India.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <a href="https://wa.me/916282936693">WhatsApp: +91 62829 36693</a>
+      <p>Mon – Sat, 9am – 6pm IST</p>
+      <p>Kerala, India</p>
+    </div>
+    <div class="foot-col">
+      <h5>Explore</h5>
+      <a href="#shop">Full Catalogue</a>
+      <a href="#" onclick="toggleCart();return false;">Your Cart</a>
+      <a href="https://wa.me/916282936693">Order via WhatsApp</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Earth Care Garden's · All rights reserved · Grown with care in Kerala</div>
+</footer>
+
+<button class="wa-float" onclick="window.open('https://wa.me/916282936693','_blank')" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-9.99 4.47-9.99 9.99 0 1.76.46 3.45 1.32 4.95L2 22l5.25-1.37c1.45.79 3.08 1.21 4.74 1.21h.01c5.52 0 9.99-4.47 9.99-9.99 0-2.67-1.04-5.18-2.93-7.07C17.22 3.04 14.71 2 12.04 2m0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.39c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c0 4.54-3.7 8.24-8.23 8.24m4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14 0-.31-.02-.48-.02-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+</button>
+
+<div class="overlay" id="overlay" onclick="closeAllModals()"></div>
+
+<!-- Cart -->
+<aside class="cart-side" id="cart-sidebar" aria-label="Shopping cart">
+  <div class="cart-head">
+    <div>
+      <h2>Your Cart</h2>
+      <small>Review & order via Email</small>
+    </div>
+    <button class="close-x" onclick="toggleCart()" aria-label="Close cart">✕</button>
+  </div>
+  <ul class="cart-list" id="cart-items"></ul>
+  <div class="cart-foot">
+    <div class="total-row"><span>Items</span><span id="cart-count-line">0</span></div>
+    <div class="total-main"><span>Total</span><span>₹<span id="cart-total">0</span></span></div>
+    <form class="checkout-form" id="checkout-form" onsubmit="event.preventDefault();sendOrderEmail();">
+      <h3>Customer details</h3>
+      <div class="form-row">
+        <input id="customer-name" type="text" placeholder="Your name *" autocomplete="name" required>
+        <input id="customer-phone" type="tel" placeholder="Phone number *" autocomplete="tel" required>
+      </div>
+      <input id="customer-email" type="email" placeholder="Email address *" autocomplete="email" required>
+      <input id="customer-place" type="text" placeholder="Town / district *" autocomplete="address-level2" required>
+      <textarea id="customer-address" placeholder="Delivery address (optional)" autocomplete="street-address"></textarea>
+      <select id="delivery-method" aria-label="Delivery method">
+        <option value="Home delivery">Home delivery</option>
+        <option value="Nursery pickup">Nursery pickup</option>
+      </select>
+      <p class="form-hint">Your details are sent directly for order confirmation.</p>
+    </form>
+    <button class="email-btn" onclick="sendOrderEmail()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      Place Order via Email
+    </button>
+    <div class="email-note">This will open your email app. You'll be redirected to the homepage afterwards.</div>
+  </div>
+</aside>
+
+<!-- Product modal -->
+<div class="pmodal" id="product-modal" onclick="if(event.target===this)closeAllModals()">
+  <div class="pmodal-box">
+    <button class="pmodal-close" onclick="closeAllModals()">✕</button>
+    <div class="pm-grid">
+      <div class="pm-gallery">
+        <img id="modal-img-a" class="pm-main" src="" alt="">
+        <img id="modal-img-b" src="" alt="">
+        <img id="modal-img-c" src="" alt="">
+      </div>
+      <div class="pm-info">
+        <div class="pm-cat" id="modal-cat">Plant</div>
+        <h2 class="pm-title" id="modal-title"></h2>
+        <div class="pm-mal" id="modal-mal-title"></div>
+        <div class="pm-price">₹<span id="modal-price"></span><small>per plant</small></div>
+        <div class="pm-desc">
+          <h4>About this plant</h4>
+          <p id="modal-desc-en"></p>
+          <h4>മലയാളം വിവരണം</h4>
+          <p id="modal-desc-mal"></p>
+        </div>
+        <button class="pm-add" id="modal-add-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">✓ Added to cart</div>
+
+<script>
+const descMap = {
+            mango: {
+                en: "{name} is a premium mango cultivar prized for its rich flavour and consistent bearing habit. The tree adapts well to Kerala's tropical climate and produces medium to large fruits with smooth skin and fibreless pulp. Fruits ripen to a beautiful colour and carry a sweet aroma that fills the orchard during the season.",
+                mal: "{name} കേരളത്തിലെ കാലാവസ്ഥയ്ക്ക് അനുയോജ്യമായ, മികച്ച സ്വാദും ഗുണവുമുള്ള ഒരു പ്രീമിയം മാമ്പഴ ഇനമാണ്. ഗ്രാഫ്റ്റ് തൈകൾ 2-3 വർഷത്തിനുള്ളിൽ കായ്ക്കാൻ തുടങ്ങും. കായ്കൾ ഇടത്തരം മുതൽ വലിയവരെയാണ്, മൃദുവായ തൊലിയും നാരില്ലാത്ത മാംസളമായ പഴച്ചാറും ഉണ്ട്."
+            },
+            longan: {
+                en: "{name} is a fine longan variety producing clusters of round translucent fruits with a fragrant sweet pulp. The evergreen tree performs well in warm humid climates and rewards growers with heavy annual crops.",
+                mal: "{name} മികച്ച ലോങ്ങൻ ഇനമാണ്, സുഗന്ധമുള്ള മധുര പഴച്ചാറുള്ള ഉരുണ്ട സുതാര്യ കായ്കൾ കുലകളായി ഉണ്ടാകും. ചൂടുള്ള ഈർപ്പമുള്ള കാലാവസ്ഥയിൽ നന്നായി വളരും, വർഷം തോറും ധാരാളം കായ്ക്കും."
+            },
+            abiu: {
+                en: "{name} is a beautiful South American fruit tree producing bright yellow fruits with translucent jelly-like pulp. The flavour is sweet with a caramel-like note that appeals to all age groups.",
+                mal: "{name} തെക്കേ അമേരിക്കയിലെ മനോഹര പഴവൃക്ഷമാണ്, തിളങ്ങുന്ന മഞ്ഞ കായ്കൾക്കുള്ളിൽ സുതാര്യമായ ജെല്ലി പോലുള്ള കാമ്പ്. കാരാമൽ പോലുള്ള മാധുര്യമുള്ള സ്വാദ് എല്ലാ പ്രായക്കാർക്കും ഇഷ്ടം."
+            },
+            nutmeg: {
+                en: "{name} is a premium nutmeg selection producing high-quality nuts and bright red mace. The evergreen tree is a valuable spice crop and blends well with mixed cropping systems in Kerala.",
+                mal: "{name} ഉയർന്ന ഗുണനിലവാരമുള്ള കായ്കളും തിളങ്ങുന്ന ചുവന്ന ജാതിപത്രിയും തരുന്ന പ്രീമിയം ജാതി ഇനമാണ്. നിത്യഹരിത വൃക്ഷം കേരളത്തിലെ മിശ്രവിള സംവിധാനങ്ങളിൽ നന്നായി യോജിക്കും."
+            },
+            custard: {
+                en: "{name} is an improved custard apple variety producing large sweet fruits with creamy delicious pulp. The plant is compact and starts bearing within 2 to 3 years of planting.",
+                mal: "{name} മെച്ചപ്പെട്ട സീതപ്പഴം ഇനമാണ്, വലിയ മധുര കായ്കൾക്ക് ക്രീമി രുചികരമായ കാമ്പ്. കോംപാക്ട് ചെടി, നട്ട് 2-3 വർഷത്തിനുള്ളിൽ കായ്ക്കാൻ തുടങ്ങും."
+            },
+            jackfruit: {
+                en: "{name} is a select jackfruit variety known for its quality flesh, sweet aroma and dependable yield. The tree is vigorous, tropical and long-living, producing large fruits on the trunk and main branches.",
+                mal: "{name} മികച്ച ചക്ക ഇനമാണ്, മാധുര്യമുള്ള ചുളകൾക്കും വിശ്വസനീയമായ വിളവിനും പ്രശസ്തം. മരം ശക്തിയേറിയതും ദീർഘായുസ്സുള്ളതുമാണ്, തടിയിലും പ്രധാന ശാഖകളിലും വലിയ ചക്കകൾ ഉണ്ടാകും."
+            },
+            cherry: {
+                en: "{name} is a tropical cherry variety producing small bright fruits with a pleasant sweet-tart taste. The plant is compact, evergreen and suitable for pot as well as garden cultivation.",
+                mal: "{name} ഉഷ്ണമേഖലാ ചെറി ഇനമാണ്, ചെറിയ തിളങ്ങുന്ന കായ്കൾക്ക് മാധുര്യവും പുളിയും ചേർന്ന സ്വാദ്. കോംപാക്ട് നിത്യഹരിത ചെടി, ചട്ടിയിലും തോട്ടത്തിലും വളർത്താം."
+            },
+            anjili: {
+                en: "{name} is a valuable indigenous tree producing tasty jack-family fruits and prized timber. It grows tall and majestic and is a traditional part of Kerala homesteads and forests.",
+                mal: "{name} തദ്ദേശീയ വൃക്ഷമാണ്, രുചികരമായ ചക്ക കുടുംബ കായ്കളും വിലയേറിയ തടിയും തരും. ഉയരത്തിലും ഗാംഭീര്യത്തിലും വളരും, കേരള വീട്ടുവളപ്പുകളുടെയും വനങ്ങളുടെയും പരമ്പരാഗത ഭാഗം."
+            },
+            avocado: {
+                en: "{name} is a select avocado variety producing creamy nutrient-rich fruits with excellent flavour. The tree grows well in Kerala's high-range and midland regions and prefers well-drained soil.",
+                mal: "{name} തിരഞ്ഞെടുത്ത അവക്കാഡോ ഇനമാണ്, മികച്ച സ്വാദുള്ള ക്രീമി പോഷക കായ്കൾ. കേരളത്തിലെ ഹൈറേഞ്ചിലും മിഡ്‌ലാൻഡിലും നന്നായി വളരും, നീർവാർച്ചയുള്ള മണ്ണ് ഇഷ്ടം."
+            },
+            olosapo: {
+                en: "{name} is a rare Central American fruit tree producing yellow fruits with a rich egg-nog-like flavour. The tree is compact, evergreen and well suited to Kerala's tropical climate.",
+                mal: "{name} മധ്യ അമേരിക്കൻ അപൂർവ പഴവൃക്ഷമാണ്, മഞ്ഞ കായ്കൾക്ക് എഗ്-നോഗ് പോലുള്ള സമ്പന്ന സ്വാദ്. കോംപാക്ട് നിത്യഹരിത വൃക്ഷം കേരളത്തിലെ ഉഷ്ണമേഖലാ കാലാവസ്ഥയ്ക്ക് അനുയോജ്യം."
+            },
+            chamba: {
+                en: "{name} is a beautiful wax apple variety producing bell-shaped crunchy fruits with mild sweet flavour. The tree is fast growing and starts bearing within 2 years of planting.",
+                mal: "{name} മനോഹരമായ വാക്സ് ആപ്പിൾ ഇനമാണ്, മണിനിറത്തിലുള്ള മൊരിഞ്ഞ കായ്കൾക്ക് നേരിയ മാധുര്യം. വേഗത്തിൽ വളരുന്ന മരം, നട്ട് 2 വർഷത്തിനുള്ളിൽ കായ്ക്കും."
+            },
+            jaboticaba: {
+                en: "{name} is a rare Brazilian fruit tree that bears grape-like fruits directly on its trunk and main branches. The dark purple-black berries have a sweet, juicy pulp with a mild grape-guava flavour.",
+                mal: "{name} ബ്രസീലിൽ നിന്നുള്ള അപൂർവ പഴവൃക്ഷമാണ്, തടിയിലും പ്രധാന ശാഖകളിലും നേരിട്ട് മുന്തിരി പോലുള്ള കായ്കൾ ഉണ്ടാകും. കടും പർപ്പിൾ-കറുപ്പ് നിറമുള്ള കായ്കൾക്ക് മധുരവും ചാറുള്ളതുമായ പഴച്ചാറാണ്."
+            },
+            jamun: {
+                en: "{name} is a selected Java plum variety producing large juicy fruits with sweet-tart flavour and deep purple colour. The tree is hardy, evergreen and well suited to Kerala's climate and rainfall.",
+                mal: "{name} തിരഞ്ഞെടുത്ത ഞാവൽ ഇനമാണ്, മാധുര്യവും പുളിയും ചേർന്ന വലിയ ചാറുള്ള കടും പർപ്പിൾ കായ്കൾ. കട്ടിയുള്ള നിത്യഹരിത വൃക്ഷം കേരളത്തിലെ കാലാവസ്ഥയ്ക്കും മഴയ്ക്കും അനുയോജ്യം."
+            },
+            pear: {
+                en: "{name} is a tropical pear variety producing crisp juicy fruits with sweet refreshing flavour. The tree is fast growing and adapts well to Kerala's warm climate.",
+                mal: "{name} ഉഷ്ണമേഖലാ പിയർ ഇനമാണ്, മൊരിഞ്ഞ ചാറുള്ള കായ്കൾക്ക് പുതുമയുള്ള മധുര സ്വാദ്. വേഗത്തിൽ വളരുന്ന മരം, കേരളത്തിലെ ചൂടുള്ള കാലാവസ്ഥയ്ക്ക് അനുയോജ്യം."
+            },
+            langsat: {
+                en: "{name} is a select langsat/longkong variety producing bunches of round translucent fruits with sweet pulp. The tree thrives in Kerala's humid climate and prefers partial shade when young.",
+                mal: "{name} തിരഞ്ഞെടുത്ത ലാങ്സാറ്റ്/ലോങ്‌കോങ് ഇനമാണ്, കുലകളായി ഉരുണ്ട സുതാര്യ കായ്കൾ മധുര പഴച്ചാറോടെ. കേരളത്തിലെ ഈർപ്പമുള്ള കാലാവസ്ഥയിൽ നന്നായി വളരും."
+            },
+            coconut: {
+                en: "{name} is a selected coconut variety chosen for high nut yield, sweet water and good copra quality. It adapts well to Kerala's soil and climate and starts flowering within 4 to 5 years.",
+                mal: "{name} കൂടുതൽ കായ്‌ഫലവും മധുരമുള്ള വെള്ളവും നല്ല കൊപ്രയും ലഭിക്കുന്ന തിരഞ്ഞെടുത്ത തെങ്ങിനമാണ്. കേരളത്തിലെ മണ്ണിനും കാലാവസ്ഥയ്ക്കും അനുയോജ്യം, നട്ട് 4-5 വർഷത്തിനുള്ളിൽ പൂവിടും."
+            },
+            arecanut: {
+                en: "{name} is an improved arecanut variety producing high-quality nuts with excellent yield potential. The palm is slender, tall and suited to Kerala's humid climate and well-drained soils.",
+                mal: "{name} മെച്ചപ്പെട്ട കമുകിനമാണ്, ഉയർന്ന ഗുണനിലവാരമുള്ള അടയ്ക്കയും മികച്ച വിളവും തരും. നീണ്ട, മെലിഞ്ഞ പന കേരളത്തിലെ ഈർപ്പമുള്ള കാലാവസ്ഥയ്ക്കും നീർവാർച്ചയുള്ള മണ്ണിനും യോജിക്കും."
+            },
+            guava: {
+                en: "{name} is a high-quality guava variety producing large fruits with soft aromatic flesh and few seeds. The plant is fast growing, compact and begins bearing within a year of planting.",
+                mal: "{name} ഉയർന്ന ഗുണമേന്മയുള്ള പേരയ്ക്ക ഇനമാണ്, മൃദുവായ സുഗന്ധമുള്ള മാംസളമായ പഴച്ചാറും കുറച്ചു കുരുകളും ഉള്ള വലിയ കായ്കൾ. വേഗത്തിൽ വളരുന്ന, ചെറിയ ചെടി, നട്ട് ഒരു വർഷത്തിനുള്ളിൽ കായ്ക്കാൻ തുടങ്ങും."
+            },
+            rambutan: {
+                en: "{name} is a superior rambutan cultivar valued for its sweet juicy aril and attractive red hairy skin. The tree thrives in humid coastal climates like Kerala's and starts bearing 3 to 4 years after planting.",
+                mal: "{name} മികച്ച റംബൂട്ടാൻ ഇനമാണ്, മധുരമുള്ള ചാറുള്ള കാമ്പിനും ചുവന്ന രോമമുള്ള തൊലിക്കും പ്രശസ്തം. കേരളത്തിലെ ഈർപ്പമുള്ള കാലാവസ്ഥയിൽ നന്നായി വളരും, നട്ട് 3-4 വർഷത്തിനുള്ളിൽ കായ്ക്കാൻ തുടങ്ങും."
+            },
+            dragon: {
+                en: "{name} is a productive dragon fruit variety producing large, colourful fruits with sweet refreshing pulp. The cactus-like plant is easy to grow on posts or trellises and starts fruiting within a year.",
+                mal: "{name} ഉൽപ്പാദനക്ഷമമായ ഡ്രാഗൺ ഫ്രൂട്ട് ഇനമാണ്, മധുരമുള്ള കാമ്പുള്ള വലിയ വർണ്ണശബളമായ കായ്കൾ. കള്ളിച്ചെടി പോലുള്ള ചെടി തൂണിലോ ട്രെല്ലിസിലോ എളുപ്പം വളർത്താം, ഒരു വർഷത്തിനുള്ളിൽ കായ്ക്കാൻ തുടങ്ങും."
+            },
+            arasamboy: {
+                en: "{name} is a valuable native tree of Kerala producing useful fruits and quality timber. It grows tall and majestic and is a traditional part of homesteads and sacred groves.",
+                mal: "{name} കേരളത്തിലെ വിലയേറിയ തദ്ദേശീയ വൃക്ഷമാണ്, ഉപയോഗപ്രദമായ കായ്കളും ഗുണമേന്മയുള്ള തടിയും തരും. ഉയരത്തിലും ഗാംഭീര്യത്തിലും വളരും, വീട്ടുവളപ്പുകളുടെയും കാവുകളുടെയും പരമ്പരാഗത ഭാഗം."
+            },
+            tennis: {
+                en: "{name} is a rewarding tropical fruit tree well suited to Kerala's warm humid climate. It produces flavourful fruits enjoyed by families and appreciated by fruit enthusiasts.",
+                mal: "{name} കേരളത്തിലെ ചൂടുള്ള ഈർപ്പമുള്ള കാലാവസ്ഥയ്ക്ക് അനുയോജ്യമായ ലാഭകരമായ ഉഷ്ണമേഖലാ പഴവൃക്ഷമാണ്. സ്വാദിഷ്ടമായ കായ്കൾ കുടുംബങ്ങൾക്കും പഴപ്രേമികൾക്കും ഇഷ്ടം."
+            },
+            durian: {
+                en: "{name} is the famous king of fruits, producing large spiky fruits with rich creamy custard-like pulp. The tree is tall and long-lived, well suited to Kerala's humid tropical climate.",
+                mal: "{name} 'പഴങ്ങളുടെ രാജാവ്' എന്നറിയപ്പെടുന്ന ദുരിയാൻ, കട്ടിയുള്ള മുള്ളുകളുള്ള വലിയ കായ്കൾക്കുള്ളിൽ ക്രീമി കസ്റ്റാർഡ് പോലുള്ള മാംസളമായ പഴച്ചാർ. ഉയരമുള്ള ദീർഘായുസ്സുള്ള മരം കേരളത്തിലെ ഉഷ്ണമേഖലാ കാലാവസ്ഥയ്ക്ക് അനുയോജ്യം."
+            },
+            grumichama: {
+                en: "{name} is a Brazilian cherry-family fruit producing dark purple fruits with sweet cherry-like flavour. The tree is compact, evergreen and highly ornamental with glossy leaves.",
+                mal: "{name} ബ്രസീലിയൻ ചെറി കുടുംബത്തിലെ പഴവർഗമാണ്, കടും പർപ്പിൾ കായ്കൾക്ക് മധുര ചെറി പോലുള്ള സ്വാദ്. കോംപാക്ട് നിത്യഹരിത വൃക്ഷം, തിളങ്ങുന്ന ഇലകൾ കൊണ്ട് ഏറെ അലങ്കാരവുമാണ്."
+            },
+            plum: {
+                en: "{name} is a select plum variety producing juicy fruits with a delightful sweet-tart flavour. The tree grows well in Kerala's climate and produces heavy annual crops.",
+                mal: "{name} തിരഞ്ഞെടുത്ത പ്ലം ഇനമാണ്, ചാറുള്ള കായ്കൾക്ക് മാധുര്യവും പുളിയും ചേർന്ന സ്വാദ്. കേരളത്തിലെ കാലാവസ്ഥയിൽ നന്നായി വളരും, ഭാരമേറിയ വാർഷിക കായ്ഫലം."
+            }
+        };
+
+const rawData = [
+            [1,"Suvarnarekha Mango (Graft)","സുവർണരേഖ മാവ് (ഗ്രാഫ്റ്റ്)",450,"mango"],
+            [2,"Longan Diamond River","ലോങ്ങൻ ഡയമണ്ട് റിവർ",1275,"longan"],
+            [3,"Himapasand Mango","ഹിമാപസന്ത് മാവ്",475,"mango"],
+            [4,"White Longan (Graft)","ലോങ്ങൻ വൈറ്റ് (ഗ്രാഫ്റ്റ്)",1200,"longan"],
+            [5,"Nutmeg – Budded Plant","മഞ്ഞ പത്രി ജാതി ബഡ്",700,"nutmeg"],
+            [6,"Custard Apple – Red Variety","കസ്റ്റർഡ് ആപ്പിൾ (റെഡ് ഇനം)",575,"custard"],
+            [7,"Apple Rumani Bud Mango","ആപ്പിൾ റുമാനി ബഡ് മാവ്",500,"mango"],
+            [8,"American Red Palm Mango","അമേരിക്കൻ റെഡ് പാം മാവ്",600,"mango"],
+            [9,"King of Chakapat Mango","കിംഗ് ഓഫ് ചക്കപ്പത്ത് മാവ്",600,"mango"],
+            [10,"Cedar Bay Cherry Seedling","സീഡർ ബേ ചെറി തൈ",375,"cherry"],
+            [11,"Kerala Native Anjili","അഞ്ഞിലി കേരള നാടൻ",600,"anjili"],
+            [12,"Red Avocado (Graft)","അവക്കാഡോ റെഡ് (ഗ്രാഫ്റ്റ്)",650,"avocado"],
+            [13,"Giant Nipple Abiu","അബിയു നിപ്പിൾ",650,"abiu"],
+            [14,"Olosapo Layer","ഓലോസപ്പോ ലെയർ",1500,"olosapo"],
+            [15,"Dalhari Chamba Layer","ഡൽഹാരി ചാമ്പ ലെയർ",500,"chamba"],
+            [16,"Jack Gumless Bud","ചക്ക ഗംലെസ് ബഡ്",425,"jackfruit"],
+            [17,"Priyur Mango","പ്രിയൂർ മാവ്",475,"mango"],
+            [18,"Catimon Mango (Graft)","കാറ്റിമോൺ മാവ് (ഗ്രാഫ്റ്റ്)",575,"mango"],
+            [19,"Nam Dok Mai Mango","നാം ഡോക് മായി മാവ്",675,"mango"],
+            [20,"Hybrid Abiu Seedling","അബിയു ഹൈബ്രിഡ് തൈ",500,"abiu"],
+            [21,"Jaboticaba – Large Fruit Variety","ജബോട്ടിക്കാബ വലിയ കായ ഇനം",1500,"jaboticaba"],
+            [22,"Keledang Anjili","കെലെഡാങ് അഞ്ഞിലി",750,"anjili"],
+            [23,"Cambodian Orange Jackfruit","കംബോഡിയൻ ഓറഞ്ച് ചക്ക",600,"jackfruit"],
+            [24,"Kilichundan Mango (Graft)","കിളിച്ചുണ്ടൻ മാവ് (ഗ്രാഫ്റ്റ്)",450,"mango"],
+            [25,"Longan Ping Pong","ലോങ്ങൻ പിംഗ് പോങ്ങ്",650,"longan"],
+            [26,"Alphonso Mango","അൽഫോൻസോ മാവ്",500,"mango"],
+            [27,"Black Java Plum – King Variety","ഞാവൽ തായ് കിംഗ്",500,"jamun"],
+            [28,"Purple Forest Pear","പർപ്പിൾ ഫോറസ്റ്റ് പിയർ",475,"pear"],
+            [29,"Hong Siang Ya Mango","ഹോങ് സിയാങ് യാ മാവ്",800,"mango"],
+            [30,"Miyazaki Mango (Graft)","മിയസാക്കി മാവ് (ഗ്രാഫ്റ്റ്)",800,"mango"],
+            [31,"Kottaram Varikka / Royal Jackfruit","കൊട്ടാരം വരിക്ക (റോയൽ ചക്ക)",475,"jackfruit"],
+            [32,"Long Kong (Graft)","ലോങ് കോങ് (ഗ്രാഫ്റ്റ്)",1200,"langsat"],
+            [33,"Dwarf Layer Pear","വയലറ്റ് ഡ്വാർഫ് ലെയർ പിയർ",475,"pear"],
+            [34,"J33 Jackfruit","J33 ചക്ക",575,"jackfruit"],
+            [35,"Nasik Pasand Mango (Graft)","നാസിക് പസന്ത് മാവ് (ഗ്രാഫ്റ്റ്)",500,"mango"],
+            [36,"Malaysian Green Coconut","മലേഷ്യൻ ഗ്രീൻ തെങ്ങ്",450,"coconut"],
+            [37,"Nutmeg – Red Mace Variety","ജാതി കിണ്ണറ്റുകര",700,"nutmeg"],
+            [38,"Black Java Plum – Boroli","ഞാവൽ ബറോളി ബ്ലാക്ക്",600,"jamun"],
+            [39,"Vietnam Super Early Jackfruit","വിയറ്റ്നാം സൂപ്പർ ഏർലി ചക്ക",550,"jackfruit"],
+            [40,"Arasamboy Seedling","അരസാംബോയ് തൈ",250,"arasamboy"],
+            [41,"Panduri Mango (Graft)","പണ്ടൂരി ഗ്രാഫ്റ്റ് മാവ്",600,"mango"],
+            [42,"Manila Tennis Ball Fruit Variety","മാനില ടെന്നിസ് ബോൾ ഇനം",550,"tennis"],
+            [43,"Katturkonnam Bud","കാട്ടൂർക്കോണം ബഡ്",525,"anjili"],
+            [44,"Kerala Red Nutmeg","ജാതി കേരളശ്രീ",750,"nutmeg"],
+            [45,"Black Java Plum – Seedless","ഞാവൽ ബ്ലാക്ക് സീഡ്ലെസ്",450,"jamun"],
+            [46,"Thai Pink Guava","തായ് പിങ്ക് പേര",475,"guava"],
+            [47,"Nutmeg F1 Bud","ജാതി F1 ബഡ്",700,"nutmeg"],
+            [48,"Durian Monthong","ദുരിയാൻ മോന്തോങ്",1500,"durian"],
+            [49,"Rambutan Sister Bud","റംബുട്ടാൻ സിസ്റ്റർ ബഡ്",575,"rambutan"],
+            [50,"Golden Nutmeg Bud","ഗോൾഡൻ ജാതി ബഡ്",675,"nutmeg"],
+            [51,"Red Surinam Cherry","റെഡ് സുരിനാം ചെറി",375,"cherry"],
+            [52,"Rio Grande Cherry Seedling","റിയോ ഗ്രാൻഡ് ചെറി തൈ",700,"cherry"],
+            [53,"Honey White Chamba","ഹണി വൈറ്റ് ചാമ്പ",500,"chamba"],
+            [54,"Super Queen Mango","സൂപ്പർ ക്വീൻ മാവ്",800,"mango"],
+            [55,"Chaunsa Mango","പാക്കിസ്ഥാൻ ചൗൻസ മാവ്",800,"mango"],
+            [56,"Dang Suria Red Bud","ഡാങ് സൂര്യ റെഡ് ബഡ്",550,"tennis"],
+            [57,"Malgova Mango","മൽഗോവ മാവ്",550,"mango"],
+            [58,"Thai Pink Guava","തായ് പിങ്ക് പേര",475,"guava"],
+            [59,"Apple Abiu – Big Size","അബിയു ആപ്പിൾ ബിഗ് സൈസ്",950,"abiu"],
+            [60,"Duku Langsat Bud","ഡുക്കു ലാങ്സാറ്റ് ബഡ്",1800,"langsat"],
+            [61,"VNR Guava","VNR ലെയർ പേര",475,"guava"],
+            [62,"Siddu Red Jackfruit Bud","സിദ്ദു റെഡ് ചക്ക ബഡ്",600,"jackfruit"],
+            [63,"Dragon Fruit – Malaysian Red","ഡ്രാഗൺ ഫ്രൂട്ട് മലേഷ്യൻ റെഡ്",550,"dragon"],
+            [64,"Red Ivory Mango (Graft)","റെഡ് ഐവറി മാവ് (ഗ്രാഫ്റ്റ്)",600,"mango"],
+            [65,"Vishwasree Nutmeg Bud","വിശ്വശ്രീ ജാതി ബഡ്",650,"nutmeg"],
+            [66,"Anjili Pingan White Bud","അഞ്ഞിലി പിംഗാൻ വൈറ്റ് ബഡ്",850,"anjili"],
+            [67,"Malaysian Yellow Coconut","മലേഷ്യൻ യെല്ലോ തെങ്ങ്",450,"coconut"],
+            [68,"Moovandan Mango","മൂവാണ്ടൻ മാമ്പഴം",450,"mango"],
+            [69,"Banganapalli Mango","ബംഗനപ്പള്ളി മാവ്",575,"mango"],
+            [70,"Anjili","അഞ്ഞിലി",700,"anjili"],
+            [71,"Thai Green Chamba (Wax Apple)","തായ് ഗ്രീൻ ചമ്പ",450,"chamba"],
+            [72,"Jumbo Mango","മാങ്ങ ജംബോ",600,"mango"],
+            [73,"Violet Guava","വയലറ്റ് പേര",550,"guava"],
+            [74,"Kalapadi Mango","കലപ്പാടി മാവ്",450,"mango"],
+            [75,"Jaboticaba","ജബോട്ടിക്കാബ",500,"jaboticaba"],
+            [76,"Thailand Apple","തായ്ലൻഡ് ആപ്പിൾ",500,"chamba"],
+            [77,"White Java Plum","ഞാവൽ വൈറ്റ്",450,"jamun"],
+            [78,"Strawberry Red Guava","സ്ട്രോബെറി റെഡ് പേര",450,"guava"],
+            [79,"Rainforest Plum","റെയിൻ ഫോറസ്റ്റ് പ്ലം",500,"plum"],
+            [80,"Four Season Longan","ലോംഗൻ 4 സീസൺ",875,"longan"],
+            [81,"Giant Abiu","അബിയു ജയന്റ്",600,"abiu"],
+            [82,"Jack Coconut","ജാക്ക് കൊക്കനട്ട്",450,"coconut"],
+            [83,"Thai 7 Guava","തായ് 7 പേര",450,"guava"],
+            [84,"Neelam Mango","നീലം മാവ്",450,"mango"],
+            [85,"Grumichama","ഗ്രൂമിച്ചാമ",700,"grumichama"],
+            [86,"Seedless Jackfruit","വിത്തില്ലാ ചക്ക",575,"jackfruit"],
+            [87,"Rambutan School Boy","റംബൂട്ടാൻ സ്കൂൾ ബോയ്",500,"rambutan"],
+            [88,"Giant Red Crystal Jaboticaba","ജയന്റ് റെഡ് ക്രിസ്റ്റൽ ജബോട്ടിക്കാബ",1500,"jaboticaba"],
+            [89,"Rambutan N20","റംബൂട്ടാൻ N20",450,"rambutan"],
+            [90,"Kerasree Coconut","കേരളശ്രീ തെങ്ങ്",400,"coconut"],
+            [91,"Java Black Jamun","ജാവ ബ്ലാക്ക് ജാംബു",600,"jamun"],
+            [92,"All Season Thailand Mango","ഓൾ സീസൺ തായ് മാങ്ങ",475,"mango"],
+            [93,"Rambutan Jarum Emas","റംബൂട്ടാൻ ജാറും ഇമാസ്",575,"rambutan"],
+            [94,"Phitrantha Branca Jaboticaba","ഫിട്രാന്ത ബ്രാങ്ക ജബോട്ടിക്കാബ",1500,"jaboticaba"],
+            [95,"Japan Red Guava","ജപ്പാൻ റെഡ് പേര",500,"guava"],
+            [96,"Vietnam Early Jackfruit","വിയറ്റ്നാം എർലി ചക്ക",550,"jackfruit"],
+            [97,"Chandrakkaran Graft Mango","ചന്ദ്രക്കാരൻ ഗ്രാഫ്റ്റ് മാവ്",450,"mango"],
+            [98,"American Beauty Dragon Fruit","അമേരിക്കൻ ബ്യൂട്ടി ഡ്രാഗൺ ഫ്രൂട്ട്",575,"dragon"],
+            [99,"Kosheri Mango","കോശേരി മാമ്പഴം",475,"mango"],
+            [100,"Inter Sumangala Arecanut","ഇന്റർ സുമംഗള കവുങ്ങ്",75,"arecanut"],
+            [101,"Rongrien Rambutan","റംബൂട്ടാൻ റോങ്രിയൻ",500,"rambutan"],
+            [110,"Sabara Jaboticaba","സബാര ജബോട്ടിക്കാബ",500,"jaboticaba"]
+        ];
+
+const categoryLabels = {
+  mango:"Mango", longan:"Longan", abiu:"Abiu", nutmeg:"Nutmeg", custard:"Custard Apple",
+  jackfruit:"Jackfruit", cherry:"Cherry", anjili:"Anjili", avocado:"Avocado", olosapo:"Olosapo",
+  chamba:"Wax Apple", jaboticaba:"Jaboticaba", jamun:"Java Plum", pear:"Pear", langsat:"Langsat",
+  coconut:"Coconut", arecanut:"Arecanut", guava:"Guava", rambutan:"Rambutan", dragon:"Dragon Fruit",
+  arasamboy:"Arasamboy", tennis:"Tropical", durian:"Durian", grumichama:"Grumichama", plum:"Plum"
+};
+
+const formatText = t => (t||"").toString().trim();
+
+const products = rawData.map(item => {
+  const cleanName = formatText(item[1]);
+  const typeInfo = descMap[item[4]] || {en:"",mal:""};
+  return {
+    id:item[0], name:item[1], malName:item[2], price:item[3], type:item[4],
+    category: categoryLabels[item[4]] || "Plant",
+    image1:`images/word_media_p${String(item[0]).padStart(2,'0')}_0.jpg`,
+    image2:`images/word_media_p${String(item[0]).padStart(2,'0')}_1.jpg`,
+    image3:`images/word_media_p${String(item[0]).padStart(2,'0')}_2.jpg`,
+    fallbackImg:`https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80`,
+    descEn: typeInfo.en.replace(/\{name\}/g, cleanName),
+    descMal: typeInfo.mal.replace(/\{name\}/g, cleanName)
+  };
+});
+
+document.getElementById('stat-varieties').textContent = products.length + '+';
+
+let cart = []; // {id, qty}
+let activeCategory = 'all';
+
+/* Chips */
+function renderChips(){
+  const counts = {all: products.length};
+  products.forEach(p=>{counts[p.type]=(counts[p.type]||0)+1});
+  const types = [['all','All Plants'], ...Object.entries(categoryLabels)
+    .filter(([k])=>counts[k])
+    .sort((a,b)=>counts[b[0]]-counts[a[0]])];
+  const el = document.getElementById('chips');
+  el.innerHTML = types.map(([k,label])=>
+    `<button class="chip ${activeCategory===k?'active':''}" onclick="setCategory('${k}')">${label} <span style="opacity:.6;margin-left:4px">${counts[k]}</span></button>`
+  ).join('');
+}
+function setCategory(c){ activeCategory=c; renderChips(); applyFilters(); }
+
+/* Grid */
+function applyFilters(){
+  const q = (document.getElementById('search-input').value||'').toLowerCase().trim();
+  const sort = document.getElementById('sort-select').value;
+  let list = products.filter(p=>{
+    if (activeCategory!=='all' && p.type!==activeCategory) return false;
+    if (!q) return true;
+    return (p.name+" "+p.malName).toLowerCase().includes(q);
+  });
+  if (sort==='low') list.sort((a,b)=>a.price-b.price);
+  else if (sort==='high') list.sort((a,b)=>b.price-a.price);
+  else if (sort==='az') list.sort((a,b)=>a.name.localeCompare(b.name));
+  renderGrid(list);
+}
+
+function renderGrid(list){
+  const grid = document.getElementById('product-grid');
+  if (!list.length){
+    grid.innerHTML = `<div class="empty-state"><h3>No plants match your search</h3><p>Try a different keyword or category.</p></div>`;
+    return;
+  }
+  grid.innerHTML = list.map(p=>`
+    <article class="card" onclick="openProductDetail(${p.id})">
+      <div class="card-img-wrap">
+        <img src="${p.image1}" alt="${formatText(p.name)}" loading="lazy" onerror="this.src='${p.fallbackImg}'">
+        <span class="card-badge">${p.category}</span>
+        <button class="quick-add" onclick="event.stopPropagation();addToCart(${p.id});" aria-label="Quick add">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">${formatText(p.name)}</h3>
+        <div class="card-mal">${formatText(p.malName)}</div>
+        <div class="card-foot">
+          <div class="price">₹${p.price}<small>only</small></div>
+          <span class="view-link">View →</span>
+        </div>
+      </div>
+    </article>
+  `).join('');
+}
+
+/* Modal */
+function openProductDetail(id){
+  const p = products.find(x=>x.id===id); if(!p) return;
+  document.getElementById('modal-cat').textContent = p.category;
+  document.getElementById('modal-title').textContent = formatText(p.name);
+  document.getElementById('modal-mal-title').textContent = formatText(p.malName);
+  document.getElementById('modal-price').textContent = p.price;
+  document.getElementById('modal-desc-en').textContent = formatText(p.descEn);
+  document.getElementById('modal-desc-mal').textContent = formatText(p.descMal);
+  [['modal-img-a',p.image1],['modal-img-b',p.image2],['modal-img-c',p.image3]].forEach(([id,src])=>{
+    const el = document.getElementById(id); el.src = src;
+    el.onerror = function(){this.src=p.fallbackImg;this.onerror=null;};
+  });
+  document.getElementById('modal-add-btn').onclick = ()=>{addToCart(p.id);closeAllModals();};
+  document.getElementById('product-modal').classList.add('active');
+  document.getElementById('overlay').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+
+/* Cart */
+function addToCart(id){
+  const existing = cart.find(c=>c.id===id);
+  if (existing) existing.qty += 1;
+  else cart.push({id, qty:1});
+  updateCartUI();
+  showToast('Added to cart');
+}
+function changeQty(id, delta){
+  const item = cart.find(c=>c.id===id); if(!item) return;
+  item.qty += delta;
+  if (item.qty<=0) cart = cart.filter(c=>c.id!==id);
+  updateCartUI();
+}
+function removeFromCart(id){ cart = cart.filter(c=>c.id!==id); updateCartUI(); }
+
+function updateCartUI(){
+  const list = document.getElementById('cart-items');
+  const totalDisplay = document.getElementById('cart-total');
+  const badge = document.getElementById('cart-count-badge');
+  const line = document.getElementById('cart-count-line');
+  const totalQty = cart.reduce((s,c)=>s+c.qty,0);
+  badge.textContent = totalQty; line.textContent = totalQty;
+
+  if (!cart.length){
+    list.innerHTML = `<li class="empty-cart"><div class="icon">🌿</div><h3 style="font-family:'Fraunces',serif;color:var(--forest);font-size:1.2rem;margin-bottom:6px">Your cart is empty</h3><p style="font-size:.9rem">Add some beautiful plants to begin.</p></li>`;
+    totalDisplay.textContent='0'; return;
+  }
+  let total = 0;
+  list.innerHTML = cart.map(ci=>{
+    const p = products.find(x=>x.id===ci.id);
+    const line = p.price*ci.qty; total += line;
+    return `
+      <li class="cart-item">
+        <img src="${p.image1}" alt="" onerror="this.src='${p.fallbackImg}'">
+        <div class="ci-body">
+          <div class="ci-name">${formatText(p.name)}</div>
+          <div class="ci-mal">${formatText(p.malName)}</div>
+          <div class="ci-row">
+            <div class="qty">
+              <button onclick="changeQty(${p.id},-1)" aria-label="Decrease">−</button>
+              <span>${ci.qty}</span>
+              <button onclick="changeQty(${p.id},1)" aria-label="Increase">+</button>
+            </div>
+            <div class="ci-price">₹${line}</div>
+          </div>
+          <button class="remove-x" onclick="removeFromCart(${p.id})" style="margin-top:6px">Remove</button>
+        </div>
+      </li>`;
+  }).join('');
+  totalDisplay.textContent = total;
+}
+
+function toggleCart(){
+  const s = document.getElementById('cart-sidebar');
+  const o = document.getElementById('overlay');
+  const open = !s.classList.contains('active');
+  s.classList.toggle('active', open);
+  o.classList.toggle('active', open);
+  document.body.style.overflow = open?'hidden':'';
+}
+function closeAllModals(){
+  document.getElementById('cart-sidebar').classList.remove('active');
+  document.getElementById('product-modal').classList.remove('active');
+  document.getElementById('overlay').classList.remove('active');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeAllModals(); });
+
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.innerHTML = '✓ ' + msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 1800);
+}
+
+function sendOrderEmail(){
+  if(!cart.length){ showToast('Cart is empty'); return; }
+  const name = document.getElementById('customer-name').value.trim();
+  const phone = document.getElementById('customer-phone').value.trim();
+  const email = document.getElementById('customer-email').value.trim();
+  const place = document.getElementById('customer-place').value.trim();
+  const address = document.getElementById('customer-address').value.trim();
+  const delivery = document.getElementById('delivery-method').value;
+  
+  if(!name || !phone || !email || !place){
+    document.getElementById('checkout-form').reportValidity();
+    showToast('Please complete your contact details');
+    return;
+  }
+
+  let msg = "Hello Earth Care Garden's! 🌱\n\nI'd like to place an order:\n\n";
+  let total = 0;
+  msg += `Customer: ${name}\nPhone: ${phone}\nEmail: ${email}\nPlace: ${place}\n`;
+  if(address) msg += `Address: ${address}\n`;
+  msg += `Delivery: ${delivery}\n\n`;
+  
+  cart.forEach(ci=>{
+    const p = products.find(x=>x.id===ci.id);
+    const line = p.price*ci.qty; total += line;
+    msg += `🌿 ${formatText(p.name)}\n   × ${ci.qty}  —  ₹${line}\n\n`;
+  });
+  msg += `━━━━━━━━━━━━\n*Total: ₹${total}*\n\nPlease confirm availability and delivery. Thank you!`;
+  
+  const mailtoLink = `mailto:earth.gardenskerala@gmail.com?cc=${encodeURIComponent(email)}&subject=${encodeURIComponent('New Order from ' + name)}&body=${encodeURIComponent(msg)}`;
+  
+  // Trigger email client
+  window.location.href = mailtoLink;
+  
+  // Give it a brief delay before closing cart and redirecting to index.html
+  setTimeout(() => {
+    cart = [];
+    updateCartUI();
+    window.location.href = 'index.html';
+  }, 800);
+}
+
+/* Init */
+renderChips();
+applyFilters();
+updateCartUI();
+</script>
+</body>
+</html>
